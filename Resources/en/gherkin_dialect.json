@@ -1,0 +1,30 @@
+{
+    "Language": "en",
+    "Keywords": {
+        "Why": [
+            "In order to ",
+            "To satisfy ",
+            "To achieve "
+        ],
+        "Who": [
+            "As a ",
+            "As an "
+        ],
+        "Where": [
+            "Where ",
+            "That ",
+            "Such that "
+        ],
+        "What": [
+            "The Solution ",
+            "The solution ",
+            "The app ",
+            "The App ",
+            "The application ",
+            "The Application "
+        ],
+        "Meta": [
+            "** "
+        ]
+    }
+}

@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Packaging.Tools.Trimming" Version="1.1.0-preview1-26619-01" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="SpecFlow" Version="3.3.57" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\**\gherkin_dialect*.json" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TrimUnusedDependencies>true</TrimUnusedDependencies>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>1.0.0.0</Version>
+    <Authors>Mike Burns</Authors>
+    <Copyright>SevenFt10 © 2020</Copyright>
+  </PropertyGroup>
+
+  <Target Name="CopyrightMessage" BeforeTargets="CoreBuild">
+    <Message Importance="high" Text="" />
+    <Message Importance="high" Text="**                                                **" />
+    <Message Importance="high" Text="** SevenFt10.SpecFlow.Gherkin.Ast (c) 7ft10, 2020 **" />
+    <Message Importance="high" Text="**                                                **" />
+    <Message Importance="high" Text="" />
+  </Target>
+
+</Project>
